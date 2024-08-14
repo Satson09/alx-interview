@@ -4,6 +4,11 @@ Minimum operations
 """
 
 def minOperations(n):
+
+    """
+    :param n:
+    :return:
+    """
     if n <= 1:
         return 0
 
@@ -16,5 +21,5 @@ def minOperations(n):
             n //= factor
         factor += 1
 
-    return minioperations
+    return operations
 
