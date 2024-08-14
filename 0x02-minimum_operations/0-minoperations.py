@@ -2,19 +2,16 @@
 """
 Minimum operations
 """
-
 def minOperations(n):
 
-    """
-    :param n:
-    :return:
-    """
     if n <= 1:
         return 0
 
+    # Initialize the operations count
     operations = 0
-    factor = 2
 
+    # Start dividing n by its smallest prime factors
+    factor = 2
     while n > 1:
         while n % factor == 0:
             operations += factor
